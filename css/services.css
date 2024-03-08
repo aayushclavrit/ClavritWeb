@@ -1,0 +1,57 @@
+#cxText {
+  width: 83%;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  line-height: 1.8;
+}
+#commerceText {
+  width: 83%;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  line-height: 1.8;
+}
+#commerceBold {
+  font-weight: 800;
+  color: chocolate;
+}
+#aiText {
+  width: 83%;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  line-height: 1.8;
+}
+#osText {
+  width: 83%;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+#osHead {
+  padding: 24px;
+  line-height: 1.6;
+  padding-top: 0;
+}
+#offerText {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  line-height: 1.8;
+}
+#offerText1 {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgoldenrod;
+  line-height: 1.8;
+}
+#carouselImgs {
+  padding-top: 30px;
+}
