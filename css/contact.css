@@ -1,0 +1,123 @@
+.flex-container {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.flex-item {
+    border: 1px solid rgb(215, 213, 213);
+    /* //border-radius: 10px; */
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.flex-item-col2{
+    border: 1px solid rgb(215, 213, 213);
+    /* border-radius: 10px; */
+    margin-left: 50px;
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    width: 555px;
+    margin-bottom: 20px;
+    
+}
+.flex-item-col4{
+    /* border: 1px solid rgb(215, 213, 213); */
+    /* border-radius: 10px; */
+    margin-left: 50px;
+    margin-top: 40px;
+    /* background-color: #f9f9f9; */
+    width: 555px;
+    
+}
+
+.info {
+    font-size: 15px;
+    line-height: 27px;
+    text-align: left;
+    color: black;
+    margin-left: 20px;
+}
+
+.address,
+.phone{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+.email {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin-right: 20px;
+    margin-top: -5px;
+}
+.icon-msg {
+    margin-right: 10px;
+   
+}
+
+.icon i {
+    font-size: 20px;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* styles.css */
+
+/* Style for the form wrapper */
+.your-form-wrapper {
+    max-width: 450px; /* Adjust this value as needed */
+    margin: 0 auto;
+   /* // padding: 20px; */
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style for form inputs */
+.wpcf7-form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for error messages */
+.error {
+    color: red;
+}
+
+/* Style for submit button */
+.wpcf7-submit {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.wpcf7-submit:hover {
+    background-color: #0056b3;
+}
+
