@@ -16,11 +16,7 @@
     <!-- Include the intl-tel-input and utils.js scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-    <style>
-        .error {
-            border: 1px solid red;
-        }
-    </style>
+   
     <script>
         (function () {
             emailjs.init('2Xq1gYg-KyPyM6lxQ');
@@ -69,10 +65,6 @@
             return false;
         }
     </script>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -254,7 +246,7 @@
                                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                                         <ul></ul>
                                     </div>
-                                    <form  id="contact-form" style="color: black;" novalidate="novalidate"
+                                    <form onsubmit="return generateAndSendEmail()" id="contact-form" style="color: black;" novalidate="novalidate"
                                         data-status="init" class="wpcf7-form theme_0 errorMsgshow init">
                                         <div style="display: none;">
                                             <input type="hidden" name="_wpcf7" value="7166">
@@ -681,32 +673,6 @@
                             }
                         </style><a class="google-map-code" href="http://www.trivoo.net" id="get-map-data">trivoo</a>
                     </div>
-                    <script type="text/javascript">
-                        function init_map() {
-                            var myOptions = {
-                                zoom: 14,
-                                center: new google.maps.LatLng(-36.955166, 174.883609), // Auckland coordinates
-                                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                            };
-                            map = new google.maps.Map(
-                                document.getElementById("gmap_canvas"),
-                                myOptions
-                            );
-                            marker = new google.maps.Marker({
-                                map: map,
-                                position: new google.maps.LatLng(-36.955166, 174.883609), // Auckland coordinates
-                            });
-                            infowindow = new google.maps.InfoWindow({
-                                content:
-                                    "<b>Clavrit Digital Solutions</b><br/>11 Lowburn Place, Clover Park, Auckland, 2019, NZ",
-                            });
-                            google.maps.event.addListener(marker, "click", function () {
-                                infowindow.open(map, marker);
-                            });
-                            infowindow.open(map, marker);
-                        }
-                        google.maps.event.addDomListener(window, "load", init_map);
-                    </script>
 
                     <div>
                         <h3 style="color: black;margin-top: 40px;text-align: center;"><b>Connect</b></h3>
@@ -836,9 +802,6 @@
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
     </script>
-
-
-
 </body>
 
 </html>
