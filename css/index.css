@@ -182,11 +182,12 @@
 #allyNos1 {
   width: 100%;
   padding: 100px;
+  padding-top: 0px;
 }
 #allyRow {
   display: flex;
   padding: 25px;
-  box-shadow: 0px 2px 10px white;
+  box-shadow: 0px 2px 10px 10px white;
 }
 
 #allyCol {
