@@ -198,3 +198,6 @@ label {
     color: white;
     font-size: large;
 }
+.iti--allow-dropdown{
+    width: 100%;
+}

@@ -15,10 +15,65 @@
   <link href="css/career.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <!-- Include EmailJS library -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Include the intl-tel-input and utils.js scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+    <script>
+      (function () {
+          emailjs.init('2Xq1gYg-KyPyM6lxQ');
+      })();
+
+      function generateAndSendEmail() {
+          // Fetch data from the form
+          var name = document.getElementById('FullName').value;
+          var email = document.getElementById('email').value;
+          var job = document.getElementById('job').value;
+          var correntCompany = document.getElementById('correntCompany').value;
+          var phone = document.getElementById('phone1').value;
+          var ctc = document.getElementById('ctc').value;
+          var qualification = document.getElementById('qualification').value;
+          var Experience = document.getElementById('Experience').value;
+          var RExperience = document.getElementById('RExperience').value;
+          var notice = document.getElementById('notice').value;
+
+          // Construct the message
+          var fullMessage = `
+          Name: ${name}
+          Email: ${email}
+          Job Applied For: ${job}
+          Phone: ${phone}
+          Qualification: ${qualification}
+         Total Experience: ${Experience}
+         Relevant Experience: ${RExperience}
+         Current Company: ${correntCompany}
+          Current CTC: ${ctc}
+          Notice Period: ${notice}`;
+        
+          // Send email using EmailJS
+          emailjs.send("service_fee58wq", "template_a0o0krc", {
+              from_name: name,
+              reply_to: email,
+              message_html: fullMessage
+          })
+              .then(function (response) {
+                  console.log('Email sent:', response.status, response.text);
+                  alert('Email sent successfully!');
+                  // Optionally, clear the form
+                  document.getElementById('contact-form').reset();
+              }, function (error) {
+                  console.error('Email send failed:', error);
+                  alert('Email send failed. Please try again later.');
+              });
+
+          // Prevent the form from submitting
+          return false;
+      }
+  </script>
+
 </head>
 
 <body>
@@ -204,7 +259,7 @@
                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                     <ul></ul>
                   </div>
-                  <form id="contact-form" style="color: black;" novalidate="novalidate" data-status="init"
+                  <form onsubmit="return generateAndSendEmail()" id="contact-form" style="color: black;" novalidate="novalidate" data-status="init"
                     class="wpcf7-form theme_0 errorMsgshow init">
                     <div style="display: none;">
                       <input type="hidden" name="_wpcf7" value="7166">
@@ -231,13 +286,15 @@
                         </div>
                       </div>
 
-                      <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div style="padding-bottom: 10px;" class="form-row">
-                          <span class="wpcf7-form-control-wrap" data-name="phone"><input type="tel" name="phone"
-                              id="phone1" value="" size="40" maxlength="10" minlength="10" class="wpcf7-form-control "
-                              aria-invalid="false" placeholder="Phone Number" required></span>
+                            <span class="wpcf7-form-control-wrap" data-name="phone"><input 
+                                    type="tel" name="phone" id="phone1" value="" size="40"
+                                    maxlength="10" minlength="10" class="wpcf7-form-control iti iti--allow-dropdown "
+                                    aria-invalid="false" placeholder="Phone" required></span>
                         </div>
-                      </div> -->
+
+                    </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="form-row">
                           <span style="color: black;" class="wpcf7-form-control-wrap" data-name="subject">
@@ -292,14 +349,14 @@
 
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="form-row">
-                          <span class="wpcf7-form-control-wrap" data-name="Company"><input id="Company" type="text"
+                          <span class="wpcf7-form-control-wrap" data-name="Company"><input id="correntCompany" type="text"
                               name="Company" value="" size="40" class="wpcf7-form-control wpcf7-text"
                               aria-invalid="false" placeholder="Current Company" required></span>
                         </div>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="form-row">
-                          <span class="wpcf7-form-control-wrap" data-name="CTC"><input id="CTC" type="text" name="CTC"
+                          <span class="wpcf7-form-control-wrap" data-name="CTC"><input id="ctc" type="text" name="CTC"
                               value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"
                               placeholder="Current CTC" required></span>
                         </div>
