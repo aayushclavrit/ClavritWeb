@@ -18,7 +18,7 @@
    padding: 0px;
 }
 .row > div:nth-child(odd) .custom-card-bg {
-    background-color: #1083b0;
+    background-color: rgba(25, 109, 173, 0.6);
     color:white;
     height: 200px;
     /* margin: -9px; */
@@ -41,10 +41,10 @@
 }
 .row > div:nth-child(odd) .btn-custom {
     background-color: white;
-    color: #1083b0;
+    color: rgba(25, 109, 173, 0.6);
 }
 .row > div:nth-child(odd) .btn-custom:hover {
-    background-color: #1083b0; /* Hover color for odd cards */
+    background-color: rgba(25, 109, 173, 0.6); /* Hover color for odd cards */
     color: white;
     border: 3px solid white; /* Border color on hover for odd cards */
 }
