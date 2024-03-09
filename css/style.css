@@ -1732,9 +1732,9 @@ img {
 
 @media screen and (min-width: 480px) {
   body {
-    background-color: lightgreen;
+    background-color: #fff;
   }
 }
-.normalText{
-  color : black
+.normalText {
+  color: black;
 }
