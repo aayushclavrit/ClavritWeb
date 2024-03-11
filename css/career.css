@@ -201,3 +201,85 @@ label {
 .iti--allow-dropdown{
     width: 100%;
 }
+.perks-col{
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+     margin-top: -35px; 
+     color: white;
+}
+.perks-sec{
+  margin-top: -30px;
+   background-color: rgba(25, 109, 173, 0.6);
+    margin-left: 40px;
+     margin-right: 40px;
+      color: white; 
+      padding: 55px;
+}
+.vc_custom_heading{
+    font-size: 40px;
+    margin-top: -18px;
+}
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+        margin-top: 0px;
+    }
+    .flex-item {
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+    .flex-item-col2 {
+      margin-left: 0px;
+        width: 100%;
+    }
+    .flex-item-col4 {
+        margin-left: 0px;
+        order: 1;
+        width: 100%;
+        margin-top: 90px;
+        
+    }
+   
+    .vc_custom_heading{
+        font-size: 35px;
+        padding: 5px;
+    }
+    .map{
+        width: 100%;
+        height: 450px;
+    }
+    #sub-footer {
+        text-align: center;
+    }
+    .social-network {
+        margin: 20px 0;
+    }
+    .office-img{
+        width: 100%;
+       
+        }
+        .row{
+            margin: 0px;
+        }
+        .perks-sec{
+            margin-top: -30px;
+             background-color: rgba(25, 109, 173, 0.6);
+                color: white; 
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 10px;
+               
+          }
+
+        .perks-col{
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+            margin-top: 0px;
+             color: white;
+        }
+       
+}
