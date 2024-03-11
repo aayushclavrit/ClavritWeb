@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <title>Swifty Corporate Bootstrap Template</title>
@@ -16,32 +17,32 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    <!-- Include EmailJS library -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <!-- Include the intl-tel-input and utils.js scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-    <script>
-      (function () {
-          emailjs.init('2Xq1gYg-KyPyM6lxQ');
-      })();
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <!-- Include EmailJS library -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!-- Include the intl-tel-input and utils.js scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script>
+    (function () {
+      emailjs.init('2Xq1gYg-KyPyM6lxQ');
+    })();
 
-      function generateAndSendEmail() {
-          // Fetch data from the form
-          var name = document.getElementById('FullName').value;
-          var email = document.getElementById('email').value;
-          var job = document.getElementById('job').value;
-          var correntCompany = document.getElementById('correntCompany').value;
-          var phone = document.getElementById('phone1').value;
-          var ctc = document.getElementById('ctc').value;
-          var qualification = document.getElementById('qualification').value;
-          var Experience = document.getElementById('Experience').value;
-          var RExperience = document.getElementById('RExperience').value;
-          var notice = document.getElementById('notice').value;
+    function generateAndSendEmail() {
+      // Fetch data from the form
+      var name = document.getElementById('FullName').value;
+      var email = document.getElementById('email').value;
+      var job = document.getElementById('job').value;
+      var correntCompany = document.getElementById('correntCompany').value;
+      var phone = document.getElementById('phone1').value;
+      var ctc = document.getElementById('ctc').value;
+      var qualification = document.getElementById('qualification').value;
+      var Experience = document.getElementById('Experience').value;
+      var RExperience = document.getElementById('RExperience').value;
+      var notice = document.getElementById('notice').value;
 
-          // Construct the message
-          var fullMessage = `
+      // Construct the message
+      var fullMessage = `
           Name: ${name}
           Email: ${email}
           Job Applied For: ${job}
@@ -52,26 +53,26 @@
          Current Company: ${correntCompany}
           Current CTC: ${ctc}
           Notice Period: ${notice}`;
-        
-          // Send email using EmailJS
-          emailjs.send("service_fee58wq", "template_a0o0krc", {
-              from_name: name,
-              reply_to: email,
-              message_html: fullMessage
-          })
-              .then(function (response) {
-                  console.log('Email sent:', response.status, response.text);
-                  alert('Email sent successfully!');
-                  // Optionally, clear the form
-                  document.getElementById('contact-form').reset();
-              }, function (error) {
-                  console.error('Email send failed:', error);
-                  alert('Email send failed. Please try again later.');
-              });
 
-          // Prevent the form from submitting
-          return false;
-      }
+      // Send email using EmailJS
+      emailjs.send("service_fee58wq", "template_a0o0krc", {
+        from_name: name,
+        reply_to: email,
+        message_html: fullMessage
+      })
+        .then(function (response) {
+          console.log('Email sent:', response.status, response.text);
+          alert('Email sent successfully!');
+          // Optionally, clear the form
+          document.getElementById('contact-form').reset();
+        }, function (error) {
+          console.error('Email send failed:', error);
+          alert('Email send failed. Please try again later.');
+        });
+
+      // Prevent the form from submitting
+      return false;
+    }
   </script>
 
 </head>
@@ -148,28 +149,28 @@
       </div>
 
 
-      <div class="container" >
+      <div class="container">
         <div class="col-sm-10" style="margin-left: 9%;">
           <h2 style="font-size: 40px;color: #030712;line-height: 48px;text-align: center; font-weight: 700;
              letter-spacing: -1px">Your Role Will Be Pivotal!!</h2>
-          <p class="top-paragraph" >
-            Our future is dependent on what we are currently doing. Let Clavrit be a part of your future!
+          <p class="top-paragraph">
+            Welcome to Clavrit, where innovation meets opportunity.
             <br>
-            Every project that we take up, every line of code, our happy customers, and every skills that comes into
-            action are all because of the people at Clavrit.
-            <br>
-            <!-- <p style="font-size: 16px; font-family: 'Noto Serif';font-weight: 600;"> -->
-            Here at Clavrit, we provide our people, an opportunity to enhance their professional as well as personal
-            skills. We conduct personal training programs to improve individual soft skills and team skills. We also
-            provide enough space and time to adopt new technologies. Present us your core competences and we will do
-            justice to your skills.
+            At Clavrit, we believe in empowering individuals to shape the digital landscape of tomorrow. Whether you're
+            an experienced professional or just starting your career journey, we offer a dynamic environment where
+            creativity and collaboration thrive.
+            <br>Join us and be part of a team that's revolutionizing the way technology impacts businesses and
+            communities worldwide.
+            Explore exciting career paths in software development, cybersecurity, data analytics, and more.
+            <br> With ample opportunities for growth and advancement, Clavrit is the perfect place to unleash your
+            potential and make a meaningful impact in the world of technology. Discover your future with us today.
           </p>
         </div>
       </div>
       <div class="flex-container">
         <div class="flex-item-col2">
           <div class="wpb_single_image wpb_content_element vc_align_left vc_custom_1627625360703">
-            <h2  style="line-height: 60px;text-align: center; "
+            <h2 style="line-height: 60px;text-align: center; "
               class="vc_custom_heading font-weight-bold vc_custom_1528107445683">Find Your Perfect Fit
             </h2>
             <div style=" background-color: #f5f5f5; height: 55px; margin-top: 35px; margin-left: 15px;
@@ -204,7 +205,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4 mb-2 card-div" style="padding: 0px;">
+              <div class="col-sm-4 mb-2 hybris-card-div">
                 <div class="card custom-card-bg">
                   <div class="card-body">
                     <h3 class="card-title">Hybris Developer</h3>
@@ -246,7 +247,8 @@
               class="vc_custom_heading font-weight-bold vc_custom_1528107445683">Haven’t found the right vacancy?
             </h2>
             <div class="wpb_wrapper">
-              <p style="text-align: center; color: black; font-size: medium; margin-top: -10px; padding: 10px;" >No problem. Send us
+              <p style="text-align: center; color: black; font-size: medium; margin-top: -10px; padding: 10px;">No
+                problem. Send us
                 your details anyway and we’ll figure something out!</p>
             </div>
           </div>
@@ -259,8 +261,8 @@
                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                     <ul></ul>
                   </div>
-                  <form onsubmit="return generateAndSendEmail()" id="contact-form" style="color: black;" novalidate="novalidate" data-status="init"
-                    class="wpcf7-form theme_0 errorMsgshow init">
+                  <form onsubmit="return generateAndSendEmail()" id="contact-form" style="color: black;"
+                    novalidate="novalidate" data-status="init" class="wpcf7-form theme_0 errorMsgshow init">
                     <div style="display: none;">
                       <input type="hidden" name="_wpcf7" value="7166">
                       <input type="hidden" name="_wpcf7_version" value="5.6">
@@ -288,13 +290,12 @@
 
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div style="padding-bottom: 10px;" class="form-row">
-                            <span class="wpcf7-form-control-wrap" data-name="phone"><input 
-                                    type="tel" name="phone" id="phone1" value="" size="40"
-                                    maxlength="10" minlength="10" class="wpcf7-form-control iti iti--allow-dropdown "
-                                    aria-invalid="false" placeholder="Phone" required></span>
+                          <span class="wpcf7-form-control-wrap" data-name="phone"><input type="tel" name="phone"
+                              id="phone1" value="" size="40" maxlength="10" minlength="10"
+                              class="wpcf7-form-control iti iti--allow-dropdown " aria-invalid="false"
+                              placeholder="Phone" required></span>
                         </div>
-
-                    </div>
+                      </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="form-row">
                           <span style="color: black;" class="wpcf7-form-control-wrap" data-name="subject">
@@ -349,8 +350,8 @@
 
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="form-row">
-                          <span class="wpcf7-form-control-wrap" data-name="Company"><input id="correntCompany" type="text"
-                              name="Company" value="" size="40" class="wpcf7-form-control wpcf7-text"
+                          <span class="wpcf7-form-control-wrap" data-name="Company"><input id="correntCompany"
+                              type="text" name="Company" value="" size="40" class="wpcf7-form-control wpcf7-text"
                               aria-invalid="false" placeholder="Current Company" required></span>
                         </div>
                       </div>
@@ -381,8 +382,8 @@
                         <div class="form-row">
                           <span class="wpcf7-form-control-wrap" data-name="message">
                             <input type="file" name="resumeupload" size="40"
-                              class="wpcf7-form-control wpcf7-file  bgclr required"
-                              aria-required="true" aria-invalid="true" style="margin-top: -10px;">
+                              class="wpcf7-form-control wpcf7-file  bgclr required" aria-required="true"
+                              aria-invalid="true" style="margin-top: -10px;">
                           </span>
                         </div>
                       </div>
@@ -392,14 +393,14 @@
 
                           <span class="wpcf7-form-control-wrap" data-name="message">
                             <input type="file" name="resumeupload" size="40"
-                              class="wpcf7-form-control wpcf7-file  bgclr required"
-                              aria-required="true" aria-invalid="true" style="margin-top: -10px;">
+                              class="wpcf7-form-control wpcf7-file  bgclr required" aria-required="true"
+                              aria-invalid="true" style="margin-top: -10px;">
                           </span>
                         </div>
                       </div>
                       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="form-row last text-center">
-                          <input style="width: 280px; background-color: rgba(25, 109, 173, 0.6); font-size: xx-large; font-weight: 1000; color: black;" type="submit" value="Apply"
+                          <input type="submit" value="APPLY NOW"
                             class="wpcf7-form-control has-spinner wpcf7-submit custom-btn-submit"><span
                             class="wpcf7-spinner"></span>
                         </div>
@@ -414,21 +415,25 @@
       </div>
 
       <div class="perks-sec">
-        
-          <div>
-            <h2 class="perks-col">Perks and Benefits!!!
-            </h2>
-          </div>
-          <div class="perks-card-text text-center" style="margin-left: 10px; margin-right: 10px; font-size: x-large;">
-            <p >
-              Clavrit offers benefits in order to encourage a culture of joy & self-accomplishment by catering to individual needs with respect to flexibility, career enhancement and an enriched personal life. Our goal is to make Clavrit an employee-friendly company, and we strive hard to maintain transparency, diversity, and equal opportunities for everyone.
-            </p>
-          </div>
-      
+
+        <div>
+          <h2 class="perks-col">Perks and Benefits!!!
+          </h2>
+        </div>
+        <div class="perks-card-text text-center" style="margin-left: 10px; margin-right: 10px; font-size: x-large;">
+          <p>
+            Clavrit offers benefits in order to encourage a culture of joy & self-accomplishment by catering to
+            individual needs with respect to flexibility, career enhancement and an enriched personal life. Our goal is
+            to make Clavrit an employee-friendly company, and we strive hard to maintain transparency, diversity, and
+            equal opportunities for everyone.
+          </p>
+        </div>
+
 
         <div class="row">
-          <div class="col-sm-4" style="padding-right: 20px;">
+          <div class="col-sm-4 " style="padding-right: 20px;">
             <div class="perks-card">
+              <img class="card-img-top" src="img/perks/work hours.jpg" alt="Card image cap">
               <div class="perks-card-body">
                 <h5 class="perks-card-title text-center" style="color: white;">Flexible work hour</h5>
                 <p class="perks-card-text text-center"> flexibilty, of choosing your work hours to maintain an enriched
@@ -437,7 +442,9 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card">
+            <div class="perks-card">
+              <img class="card-img-top" src="img/perks/culture.jpg" alt="Card image cap">
+
               <div class="card-body">
                 <h5 class="perks-card-title text-center" style="color: white;">Culture</h5>
                 <p class="perks-card-text text-center">At clavrit, we strive to ensure that everyone can retain their
@@ -447,7 +454,9 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card">
+            <div class="perks-card">
+              <img class="card-img-top" src="img/perks/Work Life Balance.jpg" alt="Card image cap">
+
               <div class="card-body">
                 <h5 class="perks-card-title text-center" style="color: white;">Work Life Balance</h5>
                 <p class="perks-card-text text-center">Our employees enjoy a perfect work-life balance at Clavrit, we
@@ -461,6 +470,8 @@
         <div class="row" style="margin-top: -18px;">
           <div class="col-sm-4">
             <div class="perks-card">
+              <img class="card-img-top" src="img/perks/Equal opportunity.jpg" alt="Card image cap">
+
               <div class="perks-card-body">
                 <h5 class="perks-card-title text-center" style="color: white;">Equal Opportunities</h5>
                 <p class="perks-card-text text-center">Clavrit is an equal opportunities employer and welcomes
@@ -472,9 +483,11 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card">
+            <div class="perks-card">
+              <img class="card-img-top" src="img/perks/Unmonotonous Work.jpg" alt="Card image cap">
+
               <div class="card-body">
-                <h5 class="perks-card-title text-center" style="color: white;">Un monotonous work</h5>
+                <h5 class="perks-card-title text-center" style="color: white;">Unmonotonous work</h5>
                 <p class="perks-card-text text-center">You will also have opportunities to hone your functional skills
                   and expertise in different areas of specialization. The sheer variety of work we do, and the
                   experience it offers, provide an unbeatable platform from which to build a career. We work hard to
@@ -485,7 +498,9 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card">
+            <div class="perks-card">
+              <img class="card-img-top" src="img/perks/Trainings.jpg" alt="Card image cap">
+
               <div class="card-body">
                 <h5 class="perks-card-title text-center" style="color: white;">Regular Trainings, Certifications &
                   opportunities for career advancement</h5>
@@ -499,9 +514,11 @@
           </div>
         </div>
 
-        <div class="row"  style="margin-top: -18px;">
+        <div class="row" style="margin-top: -18px;">
           <div class="col-sm-4">
             <div class="perks-card">
+              <img class="card-img-top" src="img/perks/we care.jpg" alt="Card image cap">
+
               <div class="perks-card-body">
                 <h5 class="perks-card-title text-center" style="color: white;">We care</h5>
                 <p class="perks-card-text text-center">Our employees feel secure from their health perspective as each
@@ -515,16 +532,22 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card">
+            <div class="perks-card">
+              <img class="card-img-top" src="img/perks/Remote Work.jpg" alt="Card image cap">
+
               <div class="card-body">
-                <h5 class="perks-card-title text-center" style="color: white;">Employee Engagement</h5>
-                <p class="perks-card-text text-center">Regular team bonding activities & events.
+                <h5 class="perks-card-title text-center" style="color: white;">Remote work</h5>
+                <p class="perks-card-text text-center">We have diverse options to choose from as to how you want to
+                  work: from onsite to Hybrid & remote working models we stand out as the only company to have offerred
+                  WFA i.e work from anywhere round the year even after covid.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="card">
+            <div class="perks-card">
+              <img class="card-img-top" src="img/perks/Rewards.jpg" alt="Card image cap">
+
               <div class="card-body">
                 <h5 class="perks-card-title text-center" style="color: white;">Appreciations, Reward & Recognition</h5>
                 <p class="perks-card-text text-center">Appreciation is something which plays a vital role in boosting
@@ -541,222 +564,12 @@
 
 
         </div>
-        <div class="para" style="margin-bottom: 10px;">
-          <p style="display: flex; justify-content: center; font-size:x-large; margin-top: 80px;
-          margin-bottom: 30px">
+        <div style="margin-bottom: 10px;">
+          <p class="perks-conclusion">
             We are excited to discover the unique skills and perspectives that you can bring to Clavrit!
           </p>
         </div>
       </div>
-      <!-- Peeks and perks -->
-      <!-- <div style="margin-top: 20px; background-color: #1083b0; margin-left: 50px; margin-right: 50px;">
-        <div>
-          <div class="wpb_single_image wpb_content_element vc_align_left vc_custom_1627625360703">
-            <h2 style="font-size: 40px;line-height: 60px;text-align: center; margin-top: -35px;"
-              class="vc_custom_heading font-weight-bold vc_custom_1528107445683">Find Out Your Perfect Fit
-            </h2>
-          </div>
-          <div>
-            <div class="row" style=" color: #fff; margin: 10px;">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="perks-card-title text-center" style="color: white;">Flexible work hour</h5>
-                    <p class="perks-card-text text-center">Flexibilty, of choosing your work hours to maintain an enriched
-                      personal
-                      life & work life balance.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="perks-card-title text-center">Remote work</h5>
-                    <p class="perks-card-text text-center">We have diverse options to choose from as to how you want to
-                      work: from
-                      onsite to Hybrid & remote working models we stand out as the only company to have offerred WFA i.e
-                      work from anywhere round the year even after covid.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="perks-card-title text-center">Work life Balance</h5>
-                    <p class="perks-card-text text-center">
-                      Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                      time off from work, comp offs etc encouraging employees to relax & rejuvinate.111111111111111ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="perks-card-title text-center">Work life Balance</h5>
-                    <p class="perks-card-text text-center">
-                      Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                      time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="perks-card-title text-center">Work life Balance</h5>
-                    <p class="perks-card-text text-center">
-                      Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                      time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="perks-card-title text-center">Work life Balance</h5>
-                    <p class="perks-card-text text-center">
-                      Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                      time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="perks-card-title text-center">Work life Balance</h5>
-                    <p class="perks-card-text text-center">
-                      Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                      time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="perks-card-title text-center">Work life Balance</h5>
-                    <p class="perks-card-text text-center">
-                      Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                      time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div style=" background-color: #1083b0; margin-left: 50px; margin-right: 50px;">
-        <div>
-          <div>
-            <h2 style="font-size: 40px;text-align: center; color: white;">Perks and Benefits!!!
-            </h2>
-            <p style="color: white; margin: 10px; margin-top: -10px;">
-              Clavrit offers benefits in order to encourage a culture of joy & self-accomplishment by catering to
-              individual needs with respect to flexibility, career enhancement and an enriched personal life. Our goal
-              is to make Clavrit an employee-friendly company, and we strive hard to maintain transparency, diversity,
-              and equal opportunities for everyone. </p>
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="row" style=" color: #fff;">
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="perks-card-title text-center" style="color: white;">Flexible work hour</h5>
-                  <p class="perks-card-text text-center">Flexibilty, of choosing your work hours to maintain an enriched
-                    personal
-                    life & work life balance.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="perks-card-title text-center">Remote work</h5>
-                  <p class="perks-card-text text-center">We have diverse options to choose from as to how you want to
-                    work: from
-                    onsite to Hybrid & remote working models we stand out as the only company to have offerred WFA i.e
-                    work from anywhere round the year even after covid.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="perks-card-title text-center">Work life Balance</h5>
-                  <p class="perks-card-text text-center">
-                    Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                    time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="perks-card-title text-center">Work life Balance</h5>
-                  <p class="perks-card-text text-center">
-                    Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                    time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="perks-card-title text-center">Work life Balance</h5>
-                  <p class="perks-card-text text-center">
-                    Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                    time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="perks-card-title text-center">Work life Balance</h5>
-                  <p class="perks-card-text text-center">
-                    Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                    time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="perks-card-title text-center">Work life Balance</h5>
-                  <p class="perks-card-text text-center">
-                    Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                    time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="perks-card-title text-center">Work life Balance</h5>
-                  <p class="perks-card-text text-center">
-                    Our employees enjoy a perfect work-life balance at Clavrit, we offer perks like birthday leaves,
-                    time off from work, comp offs etc encouraging employees to relax & rejuvinate.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div> -->
-
       <div style="padding: 15px; background-color: white;">
 
       </div>
@@ -880,12 +693,14 @@
   <script src="js/animate.js"></script>
   <script src="js/custom.js"></script>
   <script>
-    // Initialize intlTelInput on the phone input field
-    var input = document.querySelector("#phone1");
-        var iti = window.intlTelInput(input, {
-          initialCountry: "in", 
-        });
+    const phoneInputField = document.querySelector("#phone1");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      initialCountry: "us",
+      separateDialCode: true,
+    });
   </script>
+
 
 </body>
 

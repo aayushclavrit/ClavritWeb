@@ -1,26 +1,24 @@
-.job-content{
-    
+.job-content {
+
     padding: 40px;
-  color: black;
+    color: black;
     width: 65%;
     box-sizing: border-box;
     margin-left: 40px;
 }
-.line-text{
-margin-top: 3px;
+
+.line-text {
+    margin-top: 3px;
 }
+
 .right-top {
-    position: absolute;
-    top: 30px;
-    right: 90px;
-    margin: 20px;
     background-color: #f9f9f9;
-    padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
     width: 350px;
-    height: 400px;
+    height: 450px;
 }
+
 .wpcf7-form-control {
     width: 100%;
     padding: 10px;
