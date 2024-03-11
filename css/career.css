@@ -1,4 +1,9 @@
-
+.top-paragraph{
+    font-weight: 700;
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+}
 .row>div:nth-child(odd) .card-div {
     padding: 0px;
 }
@@ -261,6 +266,7 @@ label {
     margin-bottom: -30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 @media (max-width: 768px) {
     .hybris-card-div{
