@@ -220,6 +220,12 @@ label {
     font-size: 40px;
     margin-top: -18px;
 }
+.top-paragraph{
+   font-weight: 700; 
+   text-align: center; 
+   line-height: 28px; 
+   font-size: 20px;
+}
 @media (max-width: 768px) {
     .flex-container {
         flex-direction: column;
@@ -242,6 +248,12 @@ label {
         margin-top: 90px;
         
     }
+    .top-paragraph{
+        font-weight: 700; 
+        text-align: justify; 
+        line-height: 28px; 
+        font-size: 20px;
+     }
    
     .vc_custom_heading{
         font-size: 35px;
@@ -271,6 +283,7 @@ label {
                 margin-left: 20px;
                 margin-right: 20px;
                 padding: 10px;
+                text-align: justify;
                
           }
 
@@ -280,6 +293,9 @@ label {
             text-align: center;
             margin-top: 0px;
              color: white;
+        }
+        .perks-card-text{
+            text-align: justify;
         }
        
 }
