@@ -54,9 +54,9 @@
                   <a href="services.html">Services</a>
                 </li>
 
-                <li>
+                <!-- <li>
                   <a href="portfolio.html">Portfolio</a>
-                </li>
+                </li> -->
                 <li class="dropdown">
                   <a
                     style="background-color: transparent; color: white"
@@ -97,23 +97,15 @@
       </header>
       <!-- end header -->
 
-      <section id="banner">
-        <!-- Slider -->
-
-        <div class="flexslider" id="main-slider">
-          <ul class="slides">
-            <li>
-                <video class="hvideo" autoplay loop muted play in-line style>
-                    <source src="img/slides/vhome.mp4" />
-          </ul>
-        </div>
-        <!-- end slider -->
-      </section>
+      <div>
+        <video style="width: 100%;"  autoplay loop muted play in-line style>
+          <source src="img/slides/vhome.mp4" />
+      </div>
 
       <section class="homeText" style="background-color: white;">
           <div class="HomeContainer1">
-            <div class="row" >
-              <div class="col-md-12" >
+            <div class="row" style="margin: 0px;" >
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12" >
                 <div class="container" id="text1">
                   Clavrit Digital Solutions with its superior know-how empowers clients to transform their businesses to meet the challenges of the dynamic digital revolution. Our customer-centric approach helps clients have an edge, seamlessly adapt, and thrive in a fast-changing world of futuristic technologies.
                   We have delivered several enterprise-scale solutions globally. One of our SAP projects is the recipient of the prestigious SAP Innovation Award. Our clientele vouch for our expertise in SAP, Salesforce, Artificial Intelligence, Machine Learning and Robotics.
@@ -133,7 +125,9 @@
                   <img class="card-img-top" src="img/busiCons.jpg" alt="Card image cap" >
                   <div class="card-body">
                     <h3 class="card-title">Business Consulting</h3>
-                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="card-text">With vast experience in SAP, Artificial intelligence and Machine Learning projects, Clavrit is the right choice when it comes to business consulting & guidance. We specialize in IT consulting, such as Salesforce solutions, technical Support and Project management. We have in-house specialists who can provide targeted solutions to your specific challenges and needs.
+<br><br>
+                      Clavrit is known for being at the forefront of technological innovation & excellence. With our guidance and support, organizations can achieve their desired goals and targets. Clavrit’s reputation and credibility may be bolstered by positive references and testimonials from satisfied clientele.</p>
                   </div>
                 </div>
               </div>
@@ -153,14 +147,16 @@
                   <img class="card-img-top" src="img/manServ.jpg" alt="Card image cap" >
                   <div class="card-body">
                     <h3 class="card-title">Manage Services</h3>
-                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="card-text">Clavrit helps organizations in managing their day-to-day technical & monitoring activities, enabling them to focus on their core work & priorities ! Our services primarily comprise of SAP as well as Salesforce managed services.
+                      <br><br>
+                      By signing up with us, you can not only reduce your IT costs associated with hiring and training staff but also save on the cost for procurement of hardware and software needed for managing those services. Our services are specially designed to help organizations effectively manage their IT systems and infrastructure, allowing them to focus on their goals without having to worry about the complexities of IT management. Our In-house IT managed services offer organizations, a budget-friendly and efficient way to manage their IT needs and enhance their IT security!</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         <div class="HomeContainer2">
-          <div class="row" style="display: flex;">
+          <div class="row" id="businessRow">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="Homeblocks2">
               <p class="Heading1">Navigate your businesses with confidence.
                </p>
@@ -173,52 +169,83 @@
           </div>
         </div>
         <div class="HomeContainer3">
-          <div class="row" style="display: flex;">
+          <div class="row" id="clientsRow" style="display: flex;">
             <div class="col-12 col-sm-12 col-md-12 col-lg-4">
               <h4 class="Heading21">OUR CUSTOMERS & EXPERIENCES</h4>
               <h2 class="Heading22">Leading Global Enterprises
                 <br>
                 <span>Trust Us To Take Care of Their IT Ecosystems</span>
               </h2>
-              <p class="Heading23">We help some of the world's most establised organisations to maximize their software investments  while keeping costs under control. These business leaders trust our teams for reliable third-party support, expert-delivered managed services, and project-based consulting.</p>
+              <p class="Heading23"> We are glad to assist some of the most credible organizations in the world. We take pride in offering solutions that provide genuine value to clients spread all over the globe. With our IT consultancy, expertise and exceptional service, we aim to exceed our client’s expectations and deliver the best results while keeping the costs under control! We have always believed in Client first Philosophy!
+
+              We at Clavrit constantly strive to excel client experiences, based on their feedback and suggestions. Customer relations & satisfaction are the key factors we focus on.</p>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-8">
               <div class="row" style="margin-bottom: 0;">
-                <img style="padding: 10px; border-radius: 20px;" src="img/insight.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/enterprise.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/fletcher.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/ballance.jpg" alt="">
+                <div class="col-md-3"> <img style="padding: 10px; border-radius: 20px;" src="img/insight.jpg" alt=""></div>
+                <div class="col-md-3"><img style="padding: 10px;  border-radius: 20px;" src="img/enterprise.jpg" alt=""></div>
+                <div class="col-md-3"><img style="padding: 10px;  border-radius: 20px;" src="img/fletcher.jpg" alt=""></div>
+                <div class="col-md-3">  <img style="padding: 10px;  border-radius: 20px;" src="img/ballance.jpg" alt=""></div>
               </div>
               <div class="row" style="margin-bottom: 0;">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/zag.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/travis.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/nec.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/samsung.jpg" alt="">
+                <div class="col-md-3"> <img style="padding: 10px; border-radius: 20px;" src="img/zag.jpg" alt=""></div>
+                <div class="col-md-3"><img style="padding: 10px;  border-radius: 20px;" src="img/travis.jpg" alt=""></div>
+                <div class="col-md-3"><img style="padding: 10px;  border-radius: 20px;" src="img/nec.jpg" alt=""></div>
+                <div class="col-md-3">  <img style="padding: 10px;  border-radius: 20px;" src="img/samsung.jpg" alt=""></div>
               </div>
               <div class="row" style="margin-bottom: 0;">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/bristle.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/sap.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/jj.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/wipro.jpg" alt="">
+                <div class="col-md-3"> <img style="padding: 10px; border-radius: 20px;" src="img/bristle.jpg" alt=""></div>
+                <div class="col-md-3"><img style="padding: 10px;  border-radius: 20px;" src="img/sap.jpg" alt=""></div>
+                <div class="col-md-3"><img style="padding: 10px;  border-radius: 20px;" src="img/jj.jpg" alt=""></div>
+                <div class="col-md-3">  <img style="padding: 10px;  border-radius: 20px;" src="img/wipro.jpg" alt=""></div>
               </div>
               <div class="row" style="margin-bottom: 0;">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/mitre10.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/auckland council.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/philips.jpg" alt="">
-                <img style="padding: 10px;  border-radius: 20px;" src="img/dxc.jpg" alt="">
+                <div class="col-md-3"> <img style="padding: 10px; border-radius: 20px;" src="img/mitre10.jpg" alt=""></div>
+                <div class="col-md-3"><img style="padding: 10px;  border-radius: 20px;" src="img/auckland council.jpg" alt=""></div>
+                <div class="col-md-3"><img style="padding: 10px;  border-radius: 20px;" src="img/philips.jpg" alt=""></div>
+                <div class="col-md-3">  <img style="padding: 10px;  border-radius: 20px;" src="img/dxc.jpg" alt=""></div>
               </div>
              
             </div>
           </div>
         </div>
-        <div class="techBlock">
+        <!-- <div class="techBlock">
             <img id="techImg"  src="img/tech1.jpg" alt="">
+          </div> -->
+          <div class="techBlock">
+            <div class="container" style="display: flex;border-radius: 20px;">
+              <div class="container" style="margin-top: 15px;margin-bottom: 10px;padding-right: 10px;">
+                <div class="row" style="display: flex; background-color: white;margin: 0;">
+                  <div class="col-md-4" style="text-align: center;margin-top: 25px;"><img src="img/retail.jpg" alt=""><h2 style="font-size: 20px;">Retail,Commerce and Master Data</h2></div>
+                  <div class="col-md-4"  style="text-align: center;margin-top: 25px;"><img src="img/erd.jpg" alt=""><h2 style="font-size: 20px;">Enterprise Application development</h2></div>
+                  <div class="col-md-4"  style="text-align: center;margin-top: 25px;"><img src="img/brain100.jpg" alt="" ><h2 style="font-size: 20px;">AIML</h2></div>
+                </div>
+                <div class="row" style="display: flex; background-color: white;margin: 0;">
+                  <div class="col-md-4" style="text-align: center;margin-top: 25px;"><img src="img/middleware.jpg" alt=""><h2 style="font-size: 20px;">MIddleWare Development</h2></div>
+                  <div class="col-md-4"  style="text-align: center;margin-top: 25px;"><img src="img/erd.jpg" alt=""><h2 style="font-size: 20px;">Data Analytics</h2></div>
+                  <div class="col-md-4"  style="text-align: center;margin-top: 25px;"><img src="img/offshore.jpg" alt="" ><h2 style="font-size: 20px;">Offshore Outsourcing</h2></div>
+                </div>
+              </div>
+              <div class="container" style="margin-top: 15px;margin-bottom: 10px;padding-left: 10px;">
+                <div class="row" style="display: flex; margin: 0;  background-color: white;">
+                  <div class="col-md-4" style="text-align: center;margin-top: 20px;"><img src="img/techcol1.jpg" alt="" srcset=""></div>
+                  <div class="col-md-4" style="text-align: center;margin-top: 20px;"><img src="img/techcol2.jpg" alt="" srcset=""></div>
+                  <div class="col-md-4" style="text-align: center;margin-top: 20px;"><img src="img/techcol3.jpg" alt="" srcset=""></div>
+                </div>
+                <div class="row" style="display: flex; margin: 0;background-color: white;">
+                  <div class="col-md-4" style="text-align: center;margin-top: 20px;"><img src="img/techcol4.jpg" alt="" srcset=""></div>
+                  <div class="col-md-4" style="text-align: center;margin-top: 20px;"><img src="img/techcol51.jpg" alt="" srcset=""></div>
+                  <div class="col-md-4" style="text-align: center;margin-top: 20px;"><img src="img/techcol61.jpg" alt="" srcset=""></div>
+                </div>
+
+              </div>
+            </div>
           </div>
             <div class="clients" >
               <div class="container" id="allyNos">
                 <div >
-                  <h2 class="numTextHeading1">Clavrit-Ally In Numbers</h2>
-                <p class="numTextHeading2">We believe in Numbers</p>
+                  <h2 class="numTextHeading1">Clavrit's Business Stats</h2>
+                <p class="numTextHeading2">We believe in Numbers</p> 
                 </div>
               </div>
               <div class="container" id="allyNos1">
@@ -227,7 +254,7 @@
                     <div class="allyImg">
                        <img src="img/cloc.jpg" alt=""></div>
                     <div class="contentAlly">
-                      <div class="allyTextNo0">7</div>
+                      <div class="counter"  id="allyTextNo0">7</div>
                       <p class="expText">Years Of Experience</p>
                     </div>
                    
@@ -235,7 +262,7 @@
                   <div class="col-lg-1/5"id="allyCol">
                     <div  class="allyImg"> <img src="img/proje.jpg" alt=""></div>
                     <div class="contentAlly">
-                      <div class="allyTextNo">110</div>
+                      <div class="counter"  id="allyTextNo">110</div>
                       <p class="projText">Successful Projects</p>
                     </div>
                     </div>
@@ -244,7 +271,7 @@
                       <img src="img/teams.jpg" alt="">
                     </div>
                     <div class="contentAlly">
-                      <div class="allyTextNo">60</div>
+                      <div class="counter"  id="teamTextNo">60</div>
                       <p class="memText">Team Members</p>
                     </div>    
                   </div>
@@ -253,7 +280,7 @@
                        <img src="img/cust.jpg" alt="">
                       </div>
                     <div class="contentAlly">
-                      <div class="allyTextNo">110</div>
+                      <div class="counter" id="allyTextNo">110</div>
                       <p class="clText">Happy Clients</p>
                     </div>
                   </div>
@@ -261,7 +288,7 @@
                     <div  class="allyImg">   <img src="img/coun.jpg" alt=""></div>
                    
                     <div class="contentAlly">
-                      <div class="allyTextNo">28</div>
+                      <div class="counter" id="countryTextNo">28</div>
                       <p class="counText">Served Countries</p>
                     </div>
                   </div>
@@ -270,14 +297,14 @@
           </div>
       </section>
 
-      <footer>
+      <!-- <footer>
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
               <div class="widget">
                 <h5 class="widgetheading">Our Contact</h5>
 
-                <address style="margin-bottom: 0;">
+                <address>
                   <strong>Clavrit Digital Solutions</strong><br />
                   18, Institutional Area,Prem Puri, Sector 32,
                   Gurugram, Haryana,122001-India
@@ -297,19 +324,19 @@
                 <h5 class="widgetheading">Quick Links</h5>
 
                 <ul class="link-list">
-                  <li style="padding: 0;">
+                  <li >
                     <a href="services.html">Services</a>
                   </li>
-                  <li style="padding: 0;">
+                  <li >
                     <a href="about.html">About Us</a>
                   </li>
-                  <li style="padding: 0;">
+                  <li >
                     <a href="blogs.html">Blogs</a>
                   </li>
-                  <li style="padding: 0;">
+                  <li >
                     <a href="career.html">Career</a>
                   </li>
-                  <li style="padding: 0;">
+                  <li >
                     <a href="contact.html">Contact us</a>
                   </li>
                 </ul>
@@ -339,10 +366,10 @@
           </div>
         </div>
 
-        <div id="sub-footer" style="margin-top: 0; padding-top: 0;">
+        <div id="sub-footer" >
           <div class="container">
             <div class="row">
-              <div class="col-lg-6" style="padding-top: 15px;">
+              <div class="col-lg-6">
                 <div class="copyright">
                   <p>
                     <span>&copy; 2019. Clavrit Digital Solutions. All Rights Reserved.</span>
@@ -386,7 +413,152 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Our Contact</h5>
+
+                        <address>
+                            <strong>Swifty company Inc</strong><br>
+                            JC Main Road, Near Silnile tower<br>
+                            Pin-21542 NewYork US.
+                        </address>
+
+                        <p><i class="icon-phone"></i> (123) 456-789 -
+                        1255-12584<br>
+                        <i class="icon-envelope-alt"></i>
+                        email@domainname.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Quick Links</h5>
+
+                        <ul class="link-list">
+                            <li>
+                                <a href="#">Latest Events</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Terms and conditions</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Privacy policy</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Career</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Latest posts</h5>
+
+                        <ul class="link-list">
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Pellentesque et pulvinar enim.
+                                Quisque at tempor ligula</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Natus error sit voluptatem
+                                accusantium doloremque</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="widget">
+                        <h5 class="widgetheading">Recent News</h5>
+
+                        <ul class="link-list">
+                            <li>
+                                <a href="#">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit.</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Pellentesque et pulvinar enim.
+                                Quisque at tempor ligula</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Natus error sit voluptatem
+                                accusantium doloremque</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            <p><span>&copy; Swifty 2015 All right reserved.
+                            By</span> <a href=
+                            "http://webthemez.com">WebThemez</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <ul class="social-network">
+                            <li>
+                                <a class="fa fa-facebook" data-placement=
+                                "top" href="#" style="font-style: italic"
+                                title="Facebook"></a>
+                            </li>
+
+                            <li>
+                                <a class="fa fa-twitter" data-placement=
+                                "top" href="#" style="font-style: italic"
+                                title="Twitter"></a>
+                            </li>
+
+                            <li>
+                                <a class="fa fa-linkedin" data-placement=
+                                "top" href="#" style="font-style: italic"
+                                title="Linkedin"></a>
+                            </li>
+
+                            <li>
+                                <a class="fa fa-pinterest" data-placement=
+                                "top" href="#" style="font-style: italic"
+                                title="Pinterest"></a>
+                            </li>
+
+                            <li>
+                                <a class="fa fa-google-plus"
+                                data-placement="top" href="#" style=
+                                "font-style: italic" title=
+                                "Google plus"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
     <a
       class="scrollup fa fa-angle-up active"
@@ -398,14 +570,22 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.fancybox-media.js"></script>
     <script src="js/portfolio/jquery.quicksand.js"></script>
     <script src="js/portfolio/setting.js"></script>
     <script src="js/jquery.flexslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>$('.counter').counterUp({
+      delay: 10,
+      time: 1000
+  });</script>
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/owl-carousel/owl.carousel.js"></script>
+
   </body>
 </html>

@@ -73,6 +73,10 @@
   padding: 15px;
 }
 
+#businessRow {
+  display: flex;
+  margin: 0;
+}
 .Heading1 {
   font-size: 45px;
   /* line-height: 50px; */
@@ -107,13 +111,17 @@
 
 .HomeContainer3 {
   background-color: rgba(25, 109, 173, 0.6);
-  padding-left: 120px;
+  padding-left: 60px;
   padding-right: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-top: 30px;
 }
 
+#clientsRow {
+  display: flex;
+  margin: 0;
+}
 .Heading21 {
   color: white;
 }
@@ -140,6 +148,7 @@
 
 #blocks {
   display: flex;
+  margin: 0px;
 }
 
 #text1 {
@@ -178,6 +187,8 @@
 .numTextHeading2 {
   font-size: 25px;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 #allyNos1 {
   width: 100%;
@@ -188,6 +199,7 @@
   display: flex;
   padding: 25px;
   box-shadow: 0px 2px 10px 10px white;
+  border-radius: 20px;
 }
 
 #allyCol {
@@ -196,15 +208,25 @@
   padding-top: 10px;
   padding-left: 15px;
 }
-.allyTextNo0 {
+#allyTextNo0 {
   font-size: 50px;
   padding-left: 30px;
   margin-left: 25px;
   color: #fff;
 }
-.allyTextNo {
+#allyTextNo {
   font-size: 50px;
   margin-left: 25px;
+  color: #fff;
+}
+#teamTextNo {
+  font-size: 50px;
+  margin-left: 46px;
+  color: #fff;
+}
+#countryTextNo {
+  font-size: 50px;
+  margin-left: 46px;
   color: #fff;
 }
 .expText {
@@ -214,6 +236,8 @@
   font-family: Arial;
   font-weight: 600;
   color: #fff;
+  text-align: center;
+  line-height: 2.5rem;
 }
 .projText {
   font-size: 24px;
@@ -222,6 +246,8 @@
   font-family: Arial;
   font-weight: 600;
   color: #fff;
+  text-align: center;
+  line-height: 2.5rem;
 }
 .memText {
   font-size: 24px;
@@ -230,6 +256,8 @@
   font-family: Arial;
   font-weight: 600;
   color: #fff;
+  text-align: center;
+  line-height: 2.5rem;
 }
 .clText {
   font-size: 24px;
@@ -238,6 +266,8 @@
   font-family: Arial;
   font-weight: 600;
   color: #fff;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 .counText {
@@ -247,6 +277,8 @@
   font-family: Arial;
   font-weight: 600;
   color: #fff;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 .allyText {
@@ -272,4 +304,59 @@
 .clients {
   background-color: rgba(25, 109, 173, 0.6);
   margin-top: 30px;
+}
+
+@media (max-width: 520px) {
+  #text1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  #blocks {
+    display: block;
+  }
+  .card {
+    width: 36rem;
+  }
+  #cardImg1 {
+    padding-left: 39px;
+  }
+  .card-img-top {
+    width: 360px;
+    height: 250px;
+  }
+  .card-text {
+    text-align: center;
+    font-size: 19px;
+  }
+
+  .HomeContainer2 {
+    padding-left: 70px;
+  }
+
+  #businessRow {
+    display: block;
+    margin: 0;
+  }
+  .Heading2 {
+    line-height: 1.1em;
+  }
+
+  .HomeContainer3 {
+    padding-left: 0;
+  }
+
+  #clientsRow {
+    display: block;
+  }
+
+  .Heading22 {
+    text-align: center;
+  }
+
+  .Heading23 {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 94px;
+  }
 }

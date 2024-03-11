@@ -1,11 +1,11 @@
 #comingSoon {
   padding: 0px;
-  width: 1600px;
-  height: 390px;
-  margin: 0px;
+}
+#comingSoonImg {
+  border: 0 !important;
+  margin-bottom: 20px;
 }
 
-#comingSoonImg {
-  width: 1485px;
-  height: 500px;
+.caseStudies {
+  padding: 0 !important;
 }
