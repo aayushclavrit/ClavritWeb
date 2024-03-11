@@ -43,3 +43,34 @@
   border: 0 !important;
   border-bottom: 0 !important;
 }
+
+@media (max-width: 520px) {
+  #pageTitle {
+    padding-left: 15px !important;
+  }
+
+  .about {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #chooseUs {
+    margin-top: 70px;
+  }
+
+  .awesomeText {
+    text-align: justify;
+  }
+
+  .chooseText {
+    text-align: justify;
+  }
+
+  .visionText {
+    text-align: justify;
+  }
+
+  .ceoText {
+    text-align: justify;
+  }
+}

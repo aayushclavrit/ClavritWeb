@@ -34,3 +34,27 @@
 #carouselImgs {
   padding-top: 30px;
 }
+
+@media (max-width: 520px) {
+  #pageTitle {
+    padding-left: 15px !important;
+  }
+
+  #servContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .servicesText {
+    margin-left: 25px;
+    text-align: justify;
+  }
+
+  h2 {
+    margin-left: 20px;
+  }
+
+  h3 {
+    margin-left: 20px;
+  }
+}
