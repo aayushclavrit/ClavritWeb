@@ -13,7 +13,7 @@
 <link href="css/jcarousel.css" rel="stylesheet" />
 <link href="css/flexslider.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
-<link href="css/blogs.css" rel="stylesheet" />
+<link href="css/blog.css" rel="stylesheet" />
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -87,7 +87,7 @@
 	</div>
     </section>
 	
-        <div  style="background-color: white; width: 100%;" class="container">
+        <div  style="background-color: white; padding: 0%; width: 100%; text-align: justify;" class="container">
             <div style="font-size: large;" class="col-md-9 col-md-offset-2 col-xs-20">
                 <div style="font-size: medium;" class="mainheading">
     
@@ -108,7 +108,7 @@
     
                 </div>
     
-                <div class="article-post">
+                <div style="text-align: justify;" class="article-post">
                     <p>
                         In Hybris, we have two main systems: the Product Catalog system and the Classification system. The Product Catalog organizes categories and products in a structured way. Similarly, the Classification system also arranges categories hierarchically, and these are known as classifying categories. 
                        
@@ -223,39 +223,39 @@
 						
 					</p>
                     <div>
-                        <img width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.1.png"  alt="">
+                        <img width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.1.png"  alt="">
                         
-                        <img style="margin-top: 20px;" width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.2.png"  alt="">
+                        <img style="margin-top: 20px;" width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.2.png"  alt="">
                         <p>
                             <br>
                             After that we can see inside the attributes
                         </p>
                         
-                        <img width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.3.png"  alt="">
-
-                        <p>
+                        <img width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.3.png"  alt="">
+<div style="text-align: justify;">
+                        <p style="text-align: justify;" >
                             5.Map the Product with Classification class :
-                            <br>
+                            
                             $productCatalog=electronicsProductCatalog
-                            <br>
+                         
                             $productCatalogName=Electronics Product Catalog
-                            <br>
+                         
                             $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Online'])[unique=true,default=$productCatalog:Online]
-                            <br>
+                           
                             $clAttrModifiers=system='ElectronicsClassification',version='1.0',translator=de.hybris.platform.catalog.jalo.classification.impex.ClassificationAttributeTranslator,lang=en
-                            <br>
+                        
                             $clavritAttribute = @clavritAttribute[$clAttrModifiers];
-                            <br>
+                          
                             <span class = "abc">INSERT_UPDATE Product; pk[unique = true]; $clavritAttribute
                                 ; 8796221046785   ; Clavrit Test Value</span> 
                         </p>
-
-                        <img width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.4.png"  alt="">
+                      </div>
+                        <img width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.4.png"  alt="">
                         <br>
                         <p>
                             After success we can see the value.
                         </p>
-                        <img width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.5.png"  alt="">
+                        <img width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.5.png"  alt="">
                         <p>
                             	<h4>to Fetch a particular classification Attribute:</h4> 
                                 DB Table Name = <span class = "abc">classificationattribute</span>
@@ -264,16 +264,16 @@
 
                         </p>
 
-                        <img width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.6.png"  alt="">
-                        <img style="margin-top: 20px;" width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.7.png"  alt="">
+                        <img width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.6.png"  alt="">
+                        <img style="margin-top: 20px;" width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.7.png"  alt="">
 
                         	<h4>to Fetch the value of a particular Classification Attribute:</h4> 
                             DB Table Name =  <span class = "abc">productfeatures</span>
 
                             SELECT * FROM productfeatures order by CREATEDTS desc
 
-                            <img width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.8.png"  alt="">
-                            <img style="margin-top: 20px;" width="70%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.9.png"  alt="">
+                            <img width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.8.png"  alt="">
+                            <img style="margin-top: 20px;" width="100%" class=" img-fluid" src="img/blog/Hybris-Blog1/H1.9.png"  alt="">
 
 
 
