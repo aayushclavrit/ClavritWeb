@@ -111,8 +111,8 @@
 
 .HomeContainer3 {
   background-color: rgba(25, 109, 173, 0.6);
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-top: 30px;
@@ -305,8 +305,62 @@
   background-color: rgba(25, 109, 173, 0.6);
   margin-top: 30px;
 }
+@media only screen and (max-width: 300px) and (min-width: 250px) {
+  #text1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+  }
+  #blocks {
+    display: block;
+  }
+  .card {
+    width: 260px;
+  }
+  #cardImg1 {
+    padding-left: 10px;
+  }
+  .card-img-top {
+    width: 260px;
+    height: 180px;
+  }
+  .card-text {
+    text-align: justify;
+    font-size: 19px;
+  }
 
-@media (max-width: 520px) {
+  .HomeContainer2 {
+    padding-left: 70px;
+  }
+
+  #businessRow {
+    display: block;
+    margin: 0;
+  }
+  .Heading2 {
+    line-height: 1.1em;
+  }
+
+  .HomeContainer3 {
+    padding-left: 0;
+  }
+
+  #clientsRow {
+    display: block !important;
+    margin: 0;
+  }
+
+  .Heading22 {
+    text-align: center;
+  }
+
+  .Heading23 {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 94px;
+  }
+}
+@media only screen and (max-width: 520px) and (min-width: 300px) {
   #text1 {
     padding-left: 10px;
     padding-right: 10px;
@@ -347,7 +401,8 @@
   }
 
   #clientsRow {
-    display: block;
+    display: block !important;
+    margin: 0;
   }
 
   .Heading22 {
