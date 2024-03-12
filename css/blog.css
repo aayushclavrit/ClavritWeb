@@ -490,3 +490,8 @@ ul.tags li a:hover {
           margin: 0px;
       }
 }
+@media (min-width: 350px) and (max-width: 500px) {
+  #inner-headline{
+    text-align : justify;
+}
+}
