@@ -214,9 +214,9 @@ label {
 .perks-subtitle{
   margin-top: -5px;
     text-align: center;
-    font-size: x-large;
+    font-size: 1.7rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.1;
+    line-height: 1.5;
 }
 .perks-card-text{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -262,7 +262,7 @@ label {
 .perks-conclusion{
     justify-content: center;
     display: flex;
-    font-size: x-large;
+    font-size: 1.6rem;
     margin-bottom: -30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -340,6 +340,9 @@ label {
             margin-top: 0px;
              color: white;
         }
+        .perks-card-text {
+            text-align: justify;
+          }
        
         .card-img-top,
         #content img {
@@ -353,7 +356,7 @@ label {
         .perks-conclusion{
             justify-content: center;
             display: flex;
-            font-size: x-large;
+            font-size: 1.7rem;
             margin-bottom: 0px;
             margin-top: 5px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
