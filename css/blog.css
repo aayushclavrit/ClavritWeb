@@ -495,3 +495,6 @@ ul.tags li a:hover {
     text-align : justify;
 }
 }
+.align{
+  float: revert;
+}
