@@ -54,12 +54,12 @@
             })
                 .then(function (response) {
                     console.log('Email sent:', response.status, response.text);
-                    alert('Email sent successfully!');
+                   // alert('Email sent successfully!');
                     // Optionally, clear the form
                     document.getElementById('contact-form').reset();
                 }, function (error) {
                     console.error('Email send failed:', error);
-                    alert('Email send failed. Please try again later.');
+                   // alert('Email send failed. Please try again later.');
                 });
 
             // Prevent the form from submitting
