@@ -494,6 +494,9 @@ ul.tags li a:hover {
   #inner-headline{
     text-align : justify;
 }
+.blog-banner{
+  width: 100%;
+}
 }
 .align{
   float: revert;
