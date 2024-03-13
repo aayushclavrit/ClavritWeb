@@ -39,9 +39,21 @@
   margin-top: 100px;
 }
 
+#aboutContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  padding: 0;
+}
 #img {
   border: 0 !important;
   border-bottom: 0 !important;
+}
+
+.aboutHeading {
+  text-align: center;
 }
 
 @media (max-width: 520px) {
@@ -50,8 +62,7 @@
   }
 
   .about {
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
   }
 
   #chooseUs {

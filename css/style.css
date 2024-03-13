@@ -1662,8 +1662,8 @@ article .align-right {
 }
 
 .logoz {
-  width: 150px;
-  height: 38px;
+  width: 200px;
+  height: 50px;
 }
 
 .dropdown-toggle {
@@ -1737,4 +1737,11 @@ img {
 }
 .normalText {
   color: black;
+}
+
+@media (max-width: 768px) {
+  .logoz {
+    width: 140px;
+    height: 35px;
+  }
 }
