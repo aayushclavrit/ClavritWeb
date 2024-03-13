@@ -252,7 +252,7 @@
 }
 .memText {
   font-size: 24px;
-  padding-left: 17px;
+  padding-left: 41px;
   padding-top: 20px;
   font-family: Arial;
   font-weight: 600;
@@ -310,6 +310,17 @@
   display: flex;
   margin: 0%;
 }
+#block1 {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding-right: 10px;
+}
+#block2 {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding-left: 10px;
+}
 #techblock1 {
   display: flex;
   background-color: white;
@@ -324,6 +335,14 @@
 .logoz {
   width: 200px;
   height: 50px;
+}
+
+#contact {
+  padding-right: 0px;
+}
+
+#quickLinks {
+  padding-left: 0px;
 }
 
 @media (max-width: 768px) {
@@ -345,6 +364,14 @@
   #clientsRow {
     display: block;
   }
+  #block1 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  #block2 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   #techblock {
     display: block;
     margin: 0%;
@@ -360,7 +387,13 @@
   .Heading23 {
     width: 380px;
     text-align: justify;
-    padding-right: 30px;
+  }
+  #contact {
+    padding-right: 15px;
+  }
+
+  #quickLinks {
+    padding-left: 15px;
   }
   #allyRow {
     display: block;
@@ -436,4 +469,12 @@
     width: 100px;
     height: 25px;
   }
+
+  #footerCon {
+    padding-left: 0px !important;
+  }
+}
+
+#sub-footer {
+  margin-top: 25px !important;
 }
