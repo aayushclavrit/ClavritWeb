@@ -362,3 +362,14 @@ label {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 }
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+   
+}
+.error-message-phone {
+    color: red;
+    font-size: 12px;
+    margin-top: 0px;
+}

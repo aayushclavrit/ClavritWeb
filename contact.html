@@ -20,52 +20,142 @@
    
     <script>
         (function () {
-            emailjs.init('2Xq1gYg-KyPyM6lxQ');
-        })();
-
-        function generateAndSendEmail() {
-            // Fetch data from the form
-            var name = document.getElementById('FullName').value;
-            var email = document.getElementById('email').value;
-            var designation = document.getElementById('Designation').value;
-            var company = document.getElementById('Company').value;
-            var phone = document.getElementById('phone1').value;
-            var country = document.getElementById('country').value;
-            var subject = document.getElementById('subject').value;
-            var message = document.getElementById('msg').value;
-
-            // Construct the message
-            var fullMessage = `
-            Name: ${name}
-            Email: ${email}
-            Designation: ${designation}
-            Company: ${company}
-            Phone: ${phone}
-            Country: ${country}
-            Subject: ${subject}
-            Message: ${message}
-          `;
-
-            // Send email using EmailJS
-            emailjs.send("service_fee58wq", "template_a0o0krc", {
-                from_name: name,
-                reply_to: email,
-                message_html: fullMessage
-            })
-                .then(function (response) {
-                    console.log('Email sent:', response.status, response.text);
-                   // alert('Email sent successfully!');
-                    // Optionally, clear the form
-                    document.getElementById('contact-form').reset();
-                }, function (error) {
-                    console.error('Email send failed:', error);
-                   // alert('Email send failed. Please try again later.');
-                });
-
-            // Prevent the form from submitting
-            return false;
-        }
-    </script>
+               emailjs.init('2Xq1gYg-KyPyM6lxQ');
+           })();
+       function generateAndSendEmail() {
+           // Fetch data from the form
+           var name = document.getElementById('FullName').value;
+           var email = document.getElementById('email').value;
+           var designation = document.getElementById('Designation').value;
+           var company = document.getElementById('Company').value;
+           var phone = document.getElementById('phone1').value;
+           var country = document.getElementById('country').value;
+           var subject = document.getElementById('subject').value;
+           var message = document.getElementById('msg').value;
+   
+           // Construct the message
+           var fullMessage = `
+               Name: ${name}
+               Email: ${email}
+               Designation: ${designation}
+               Company: ${company}
+               Phone: ${phone}
+               Country: ${country}
+               Subject: ${subject}
+               Message: ${message}
+           `;
+   
+           // Send email using EmailJS
+           emailjs.send("service_fee58wq", "template_a0o0krc", {
+               from_name: name,
+               reply_to: email,
+               message_html: fullMessage
+           })
+               .then(function (response) {
+                   console.log('Email sent:', response.status, response.text);
+                   alert('Email sent successfully!');
+                   // Optionally, clear the form
+                   document.getElementById('contact-form').reset();
+               }, function (error) {
+                   console.error('Email send failed:', error);
+                   alert('Email send failed. Please try again later.');
+               });
+   
+           // Prevent the form from submitting
+           return false;
+       }
+   
+       document.addEventListener("DOMContentLoaded", function () {
+           const form = document.getElementById("contact-form");
+   
+           form.addEventListener("submit", function (event) {
+               // Prevent the form from submitting by default
+               event.preventDefault();
+   
+               // Reset previous error messages
+               const errorMessages = document.querySelectorAll(".error-message");
+               errorMessages.forEach(function (errorMessage) {
+                   errorMessage.remove();
+               });
+               const errorMessagesforphone = document.querySelectorAll(".error-message-phone");
+               errorMessagesforphone.forEach(function (errorMessage) {
+                   errorMessage.remove();
+               });
+   
+               // Validation
+               let valid = true;
+   
+               // Full Name
+               const fullNameInput = document.getElementById("FullName");
+               if (!fullNameInput.value.trim()) {
+                   valid = false;
+                   showError(fullNameInput, "Please enter your full name", "error-message");
+               }
+   
+               // Email
+               const emailInput = document.getElementById("email");
+               const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+               if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
+                   valid = false;
+                   showError(emailInput, "Please enter a valid email address", "error-message");
+               }
+   
+               // Designation
+               const designationInput = document.getElementById("Designation");
+               if (!designationInput.value.trim()) {
+                   valid = false;
+                   showError(designationInput, "Please enter your designation", "error-message");
+               }
+   
+               // Company
+               const companyInput = document.getElementById("Company");
+               if (!companyInput.value.trim()) {
+                   valid = false;
+                   showError(companyInput, "Please enter your company name", "error-message");
+               }
+   
+               // Phone
+               const phoneInput = document.getElementById("phone1");
+               if (!phoneInput.value.trim()) {
+                   valid = false;
+                   showError(phoneInput, "Please enter your phone number", "error-message-phone");
+               }
+   
+               // Country
+               const countryInput = document.getElementById("country");
+               if (!countryInput.value.trim()) {
+                   valid = false;
+                   showError(countryInput, "Please select your country", "error-message");
+               }
+   
+               // Subject
+               const subjectInput = document.getElementById("subject");
+               if (!subjectInput.value.trim()) {
+                   valid = false;
+                   showError(subjectInput, "Please select a subject", "error-message");
+               }
+   
+               // Message
+               const messageInput = document.getElementById("msg");
+               if (!messageInput.value.trim()) {
+                   valid = false;
+                   showError(messageInput, "Please enter your message", "error-message");
+               }
+   
+               // If valid, submit the form
+               if (valid) {
+                   generateAndSendEmail();
+               }
+           });
+   
+           function showError(input, message, errorClass) {
+               const errorDiv = document.createElement("div");
+               errorDiv.className = errorClass;
+               errorDiv.innerHTML = message;
+               input.parentNode.appendChild(errorDiv);
+           }
+       });
+   </script>
 
    
 </head>
@@ -268,7 +358,7 @@
                                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                                         <ul></ul>
                                     </div>
-                                    <form onsubmit="return generateAndSendEmail()" id="contact-form" style="color: black;" novalidate="novalidate"
+                                    <form  id="contact-form" style="color: black;" novalidate="novalidate"
                                         data-status="init" class="wpcf7-form theme_0 errorMsgshow init">
                                         <div style="display: none;">
                                             <input type="hidden" name="_wpcf7" value="7166">

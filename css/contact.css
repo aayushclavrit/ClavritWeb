@@ -4,6 +4,18 @@
     background-color: white;
     margin-top: 20px;
 }
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -16px;
+   
+}
+.error-message-phone {
+    color: red;
+    font-size: 12px;
+    margin-top: -6px;
+    margin-bottom: -14px !important;
+}
 .menu-btn {
     border-radius: 48px;
     border: 0.5px solid lightgrey;

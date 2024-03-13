@@ -23,14 +23,13 @@
   <!-- Include the intl-tel-input and utils.js scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-  <script>
-    (function () {
-      emailjs.init('2Xq1gYg-KyPyM6lxQ');
-    })();
-
-    function generateAndSendEmail() {
-      // Fetch data from the form
-      var name = document.getElementById('FullName').value;
+   
+<script>
+  (function () {
+         emailjs.init('2Xq1gYg-KyPyM6lxQ');
+     })();
+ function generateAndSendEmail() {
+  var name = document.getElementById('FullName').value;
       var email = document.getElementById('email').value;
       var job = document.getElementById('job').value;
       var correntCompany = document.getElementById('correntCompany').value;
@@ -72,8 +71,113 @@
 
       // Prevent the form from submitting
       return false;
-    }
-  </script>
+ }
+
+ document.addEventListener("DOMContentLoaded", function () {
+     const form = document.getElementById("contact-form");
+
+     form.addEventListener("submit", function (event) {
+         // Prevent the form from submitting by default
+         event.preventDefault();
+
+         // Reset previous error messages
+         const errorMessages = document.querySelectorAll(".error-message");
+         errorMessages.forEach(function (errorMessage) {
+             errorMessage.remove();
+         });
+         const errorMessagesforphone = document.querySelectorAll(".error-message-phone");
+         errorMessagesforphone.forEach(function (errorMessage) {
+             errorMessage.remove();
+         });
+
+         // Validation
+         let valid = true;
+
+         // Full Name
+         const fullNameInput = document.getElementById("FullName");
+         if (!fullNameInput.value.trim()) {
+             valid = false;
+             showError(fullNameInput, "Please enter your full name", "error-message");
+         }
+
+         // Email
+         const emailInput = document.getElementById("email");
+         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+         if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
+             valid = false;
+             showError(emailInput, "Please enter a valid email address", "error-message");
+         }
+
+         const jobinput = document.getElementById("job");
+         if (!jobinput.value.trim()) {
+             valid = false;
+             showError(jobinput, "Please select your job", "error-message");
+         }
+
+         // Designation
+         const correntCompanyinput = document.getElementById("correntCompany");
+         if (!correntCompanyinput.value.trim()) {
+             valid = false;
+             showError(correntCompanyinput, "Please enter your current company", "error-message");
+         }
+
+        
+
+        
+         const phoneInput = document.getElementById("phone1");
+         if (!phoneInput.value.trim()) {
+             valid = false;
+             showError(phoneInput, "Please enter your phone number", "error-message-phone");
+         }
+          // Company
+          const ctcInput = document.getElementById("ctc");
+         if (!ctcInput.value.trim()) {
+             valid = false;
+             showError(ctcInput, "Please enter your current ctc", "error-message");
+         }
+
+         const qualificationInput = document.getElementById("qualification");
+         if (!qualificationInput.value.trim()) {
+             valid = false;
+             showError(qualificationInput, "Please select your qualification", "error-message");
+         }
+
+
+         // Country
+         const experienceInput = document.getElementById("Experience");
+         if (!experienceInput.value.trim()) {
+             valid = false;
+             showError(experienceInput, "Please enter your experience", "error-message");
+         }
+
+         // Subject
+         const RExperienceInput = document.getElementById("RExperience");
+         if (!RExperienceInput.value.trim()) {
+             valid = false;
+             showError(RExperienceInput, "Please enter a Relevant Experience", "error-message");
+         }
+
+         // Message
+         const noticeInput = document.getElementById("notice");
+         if (!noticeInput.value.trim()) {
+             valid = false;
+             showError(noticeInput, "Please select your notice peroid", "error-message");
+         }
+
+         // If valid, submit the form
+         if (valid) {
+             generateAndSendEmail();
+         }
+     });
+
+     function showError(input, message, errorClass) {
+         const errorDiv = document.createElement("div");
+         errorDiv.className = errorClass;
+         errorDiv.innerHTML = message;
+         input.parentNode.appendChild(errorDiv);
+     }
+ });
+</script>
 
 </head>
 
@@ -257,7 +361,7 @@
                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                     <ul></ul>
                   </div>
-                  <form onsubmit="return generateAndSendEmail()" id="contact-form" style="color: black;"
+                  <form  id="contact-form" style="color: black;"
                     novalidate="novalidate" data-status="init" class="wpcf7-form theme_0 errorMsgshow init">
                     <div style="display: none;">
                       <input type="hidden" name="_wpcf7" value="7166">
@@ -268,7 +372,7 @@
                       <input type="hidden" name="_wpcf7_posted_data_hash" value="">
                     </div>
                     <div class="row">
-                      <div class="col-lg-6 col-md-3 col-sm-12 col-xs-12">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <span class="wpcf7-form-control-wrap" data-name="FirstName">
                           <input type="text" name="FirstName" id="FullName" value="" size="40"
                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
