@@ -34,6 +34,8 @@ section {
     -moz-column-count: 2;
     column-count: 2;
   }
+
+  
 }
 @media (min-width: 992px) {
   .navbar-toggleable-md .navbar-nav .nav-link {

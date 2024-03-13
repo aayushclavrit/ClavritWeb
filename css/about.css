@@ -85,3 +85,9 @@
     text-align: justify;
   }
 }
+
+/* @media only screen and (max-width: 1350px) and (min-width: 1250px) {
+  .about {
+    width: 1315px !important;
+  }
+} */
