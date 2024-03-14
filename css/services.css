@@ -8,6 +8,11 @@
   text-align: justify;
 }
 
+#servicesRow {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 #commerceBold {
   font-weight: 800;
   color: black;
@@ -48,7 +53,6 @@
   }
 
   .servicesText {
-    margin-left: 25px;
     text-align: justify;
   }
 
