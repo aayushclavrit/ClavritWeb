@@ -2,6 +2,14 @@
   background-color: gainsboro;
 }
 
+.whyClavrit {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .hero-text2 {
   background-color: gray;
   padding: 10px;
@@ -67,8 +75,8 @@
   /* linear-gradient:(0deg, #196DAD 60%, #14AD1A 60% ) */
   padding-left: 120px;
   padding-right: 60px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #Homeblocks2 {
@@ -115,8 +123,8 @@
   background-color: rgba(25, 109, 173, 0.6);
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-top: 30px;
 }
 
@@ -154,7 +162,7 @@
 }
 
 #text1 {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   color: rgba(25, 109, 173);
   font-size: 19px;
   font-weight: 600;
@@ -179,7 +187,7 @@
 #allyNos {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 20px 50px;
 }
 .numTextHeading1 {
   font-size: 40px;
@@ -193,8 +201,7 @@
 }
 #allyNos1 {
   width: 100%;
-  padding: 100px;
-  padding-top: 0px;
+  padding: 20px 100px;
 }
 #allyRow {
   display: flex;
@@ -345,6 +352,13 @@
   padding-left: 0px;
 }
 
+.d1 {
+  background-color: black !important;
+  color: white !important;
+}
+body {
+  background-color: gainsboro !important;
+}
 @media (max-width: 768px) {
   #businessRow {
     display: block;
@@ -353,9 +367,11 @@
   .Heading2 {
     line-height: 1.1em;
     font-size: 25px;
+    text-align: center;
   }
   .Heading1 {
     font-size: 30px;
+    text-align: center;
   }
   .Heading23 {
     width: 100% !important;
@@ -386,7 +402,7 @@
   }
   .Heading23 {
     width: 380px;
-    text-align: justify;
+    text-align: center;
   }
   #contact {
     padding-right: 15px;
@@ -412,6 +428,7 @@
     width: 100%;
     padding: 70px;
     padding-top: 0px;
+    padding-bottom: 30px;
   }
 
   #allyTextNo0 {
@@ -447,10 +464,9 @@
   }
   #custCenter {
     margin-left: 55px;
+    margin-top: 30px !important;
   }
-  .Heading1 {
-    text-align: justify;
-  }
+
   .navbar-header {
     margin-top: 5px;
   }
@@ -459,18 +475,35 @@
     padding-right: 20px;
   }
   .paragraph1 {
-    text-align: justify;
+    text-align: center;
   }
   #text1 {
-    text-align: justify;
+    text-align: center;
+  }
+
+  .card-text {
+    text-align: center;
   }
 
   .logoz {
     width: 100px;
     height: 25px;
   }
+  .numTextHeading1 {
+    text-align: center;
+  }
 
+  #sub-footer {
+    margin-top: 0px !important;
+  }
   #footerCon {
     padding-left: 0px !important;
+  }
+
+  #quickLinks {
+    margin-bottom: 20px !important;
+  }
+  .widgetheading {
+    margin-bottom: 10px !important;
   }
 }

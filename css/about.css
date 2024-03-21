@@ -57,8 +57,19 @@
 }
 
 @media (max-width: 520px) {
+  #content {
+    padding-top: 0px !important;
+  }
   #pageTitle {
     padding-left: 15px !important;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
   }
 
   .about {
@@ -70,19 +81,19 @@
   }
 
   .awesomeText {
-    text-align: justify;
+    text-align: center;
   }
 
   .chooseText {
-    text-align: justify;
+    text-align: center;
   }
 
   .visionText {
-    text-align: justify;
+    text-align: center;
   }
 
   .ceoText {
-    text-align: justify;
+    text-align: center;
   }
 }
 
