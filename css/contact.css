@@ -81,7 +81,7 @@
 .email {
   display: flex;
   margin-left: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -162,7 +162,7 @@ label {
 }
 
 #email1 {
-  margin-top: 93px;
+  margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -173,21 +173,22 @@ label {
     margin-top: 0px;
   }
   .flex-item {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     margin-left: 0px;
   }
   .flex-item-col2 {
     margin-left: 0px;
     width: 100%;
+    margin-top: 20px !important;
   }
   .flex-item-col4 {
     margin-left: 0px;
     order: 1;
     width: 100%;
-    margin-top: 90px;
+    margin-top: 60px;
   }
   #email1 {
-    margin-top: 0px;
+    margin-top: 20px !important;
   }
   .map {
     width: 100%;

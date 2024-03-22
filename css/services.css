@@ -43,8 +43,11 @@
 }
 
 @media (max-width: 520px) {
+  #content {
+    padding-top: 10px;
+  }
   #pageTitle {
-    padding-left: 15px !important;
+    text-align: left !important;
   }
 
   #servContainer {
@@ -53,19 +56,26 @@
   }
 
   .servicesText {
-    text-align: justify;
+    text-align: center;
+    margin-bottom: 25px !important;
   }
 
   h2 {
-    margin-left: 20px;
+    margin-left: 0px;
+    text-align: center;
   }
 
   h3 {
-    margin-left: 20px;
+    margin-left: 0px;
+    text-align: center;
   }
 
   #carouselImgs {
-    padding: 30;
+    padding: 30px;
     margin: 0;
+  }
+
+  #servicesRow {
+    margin-bottom: 0px;
   }
 }

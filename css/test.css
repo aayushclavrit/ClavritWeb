@@ -479,7 +479,7 @@ section.hero-text h1 {
 #content {
   position: relative;
   background: #fff;
-  padding: 50px 0 0px 0;
+  padding: 0px 0 0px 0;
 }
 .num img {
   max-width: 100%;
@@ -1458,6 +1458,9 @@ article .align-right {
   .navbar-default .navbar-form {
     border-color: rgba(255, 255, 255, 0.58);
     margin-top: 15px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff !important;
   }
   body {
     padding-right: 0;
